@@ -91,3 +91,34 @@
 # quando a pessoa acertar coloque que ela ganhou, a palabvra e quantas tentativas foram necessarias
 # se ela não digitar nada obrigue ela digitar algo
 # se ela digitar algo maior que uma letra, fale que esta inválido
+
+import os
+
+palavra_secreta = 'SORVETE'
+letras_acertadas = ''
+tentativas = 0
+
+while True:
+    letra_usuario = input('DIGITE UMA LETRA ->')
+    tentativas += 1
+    if len(letra_usuario) > 1 or len(letra_usuario) == 0:
+        print('DIGITE UMA LETRA VÁLIDA !')
+        continue
+    if letra_usuario in palavra_secreta:
+        letras_acertadas += letra_usuario
+
+    palavra_formada = ''    
+
+    for letra_secreta in palavra_secreta:
+        if letra_secreta in letras_acertadas:
+            palavra_formada += letra_secreta
+        else:
+            palavra_formada += '*'
+    print(palavra_formada)
+    if palavra_formada == palavra_secreta:
+        os.system('clear')
+        print('VOCÊ GANHOU !!!')
+        print(f'A PALAVRA ERA {palavra_formada}')
+        print(f'VOCÊ USOU {tentativas} TENTATIVAS')
+        letras_acertadas = ''
+        tentativas = 0
