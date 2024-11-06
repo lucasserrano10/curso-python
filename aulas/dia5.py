@@ -26,8 +26,32 @@
 
 # nomes.insert(0,'OLA')
 
-lista_a = [1,2,3,4]
-lista_b = [5,6,7,8,9]
-lista_a.extend(lista_b)
+# lista_a = [1,2,3,4]
+# lista_b = [5,6,7,8,9]
+# lista_a.extend(lista_b)
 
-print(lista_a)
+# print(lista_a)
+
+# Nome = 'Luiz'
+# Nome = 'Lucas'
+# print(Nome)
+
+# nomes = ['Lucas', 'João', 'Maria']
+# index = 0
+
+# for nome in nomes:
+#     print(index,nome)
+#     index += 1
+
+# for i in range(0,len(nomes)):
+#     for nome in nomes:
+#         print(f"{i} - {nome}")
+
+
+# _,nome2, *_ = ['Lucas', 'João', 'Maria']
+# print(nome2)
+
+#quando temos uma lista que não vai ser alterado nada, vamos usar as tuplas
+
+nomes = 'Maria', 'Jonas', 'Boelt'
+nomes[0] = 'BABY YOGA' # não é possivel, fazer trocas com tuplas
