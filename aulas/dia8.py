@@ -45,12 +45,12 @@
 
 # CLOSURE
 
-def criar_saudacao(saudacao, nome):
-    def saudar():
-        return f'{saudacao}, {nome}'
-    return saudar
+# def criar_saudacao(saudacao, nome):
+#     def saudar():
+#         return f'{saudacao}, {nome}'
+#     return saudar
 
-s1 = criar_saudacao('BOM DIA', 'LUIZ')
-s2 = criar_saudacao('BOA NOITE', 'LUIZ')
+# s1 = criar_saudacao('BOM DIA', 'LUIZ')
+# s2 = criar_saudacao('BOA NOITE', 'LUIZ')
 
-print(s1())
+# print(s1())
